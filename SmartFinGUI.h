@@ -10,16 +10,3 @@
 #include <fstream>
 #include <cmath>
 
-
-bool initImGui(GLFWwindow* window);
-
-void SaveSettings();
-
-void LoadSettings();
-
-void loadFile(const std::string& filePath);
-
-void renderUI();
-
-void cleanup(GLFWwindow* window);
-

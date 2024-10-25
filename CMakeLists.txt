@@ -16,9 +16,15 @@ set(SOURCES
     "vendor/imgui/imgui_draw.cpp"
     "vendor/imgui/imgui_tables.cpp"
     "vendor/imgui/imgui_widgets.cpp"
+	"RenderImgui.cpp"
+	"RenderImgui.h"
+	"RenderGLFW.cpp" 
+	"RenderGLFW.h" 
+	"utils.cpp" 
+	"utils.h"
 )
 
-add_executable (SmartFinGUI ${SOURCES})
+add_executable (SmartFinGUI ${SOURCES} )
 
 find_package(imgui CONFIG REQUIRED)
 find_package(glfw3 CONFIG REQUIRED)
