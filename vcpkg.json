@@ -1,5 +1,9 @@
 {
   "dependencies": [
-    "imgui"
+    "glfw3",
+    "imgui",
+    "imgui-sfml",
+    "opengl",
+    "milerius-sfml-imgui"
   ]
 }
