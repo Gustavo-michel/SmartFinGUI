@@ -8,23 +8,29 @@ endif()
 project ("SmartFinGUI")
 
 set(SOURCES
-	"SmartFinGUI.cpp" 
-	"SmartFinGUI.h" 
+	"SmartUI.cpp" 
+	"SmartUI.h" 
 	"vendor/imgui/backends/imgui_impl_glfw.cpp"
     "vendor/imgui/backends/imgui_impl_opengl3.cpp"
 	"vendor/imgui/imgui.cpp"
     "vendor/imgui/imgui_draw.cpp"
     "vendor/imgui/imgui_tables.cpp"
     "vendor/imgui/imgui_widgets.cpp"
+	"RenderImgui.cpp"
+	"RenderImgui.h"
+	"RenderGLFW.cpp" 
+	"RenderGLFW.h" 
+	"utils.cpp" 
+	"utils.h"
 )
 
-add_executable (SmartFinGUI ${SOURCES})
+add_executable (SmartUI ${SOURCES} )
 
 find_package(imgui CONFIG REQUIRED)
 find_package(glfw3 CONFIG REQUIRED)
 find_package(OpenGL REQUIRED)
 
-target_include_directories(SmartFinGUI PRIVATE ${PROJECT_SOURCE_DIR}/vendor/imgui)
-target_include_directories(SmartFinGUI PRIVATE ${PROJECT_SOURCE_DIR}/vendor/imgui/backends)
+target_include_directories(SmartUI PRIVATE ${PROJECT_SOURCE_DIR}/vendor/imgui)
+target_include_directories(SmartUI PRIVATE ${PROJECT_SOURCE_DIR}/vendor/imgui/backends)
 
-target_link_libraries(SmartFinGUI PRIVATE glfw OpenGL::GL)
+target_link_libraries(SmartUI PRIVATE glfw OpenGL::GL)
