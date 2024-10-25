@@ -8,20 +8,20 @@ endif()
 project ("SmartFinGUI")
 
 set(SOURCES
-	"SmartUI.cpp" 
-	"SmartUI.h" 
+	"SmartFinGUI/SmartUI.cpp" 
+	"SmartFinGUI/SmartUI.h" 
 	"vendor/imgui/backends/imgui_impl_glfw.cpp"
     "vendor/imgui/backends/imgui_impl_opengl3.cpp"
 	"vendor/imgui/imgui.cpp"
     "vendor/imgui/imgui_draw.cpp"
     "vendor/imgui/imgui_tables.cpp"
     "vendor/imgui/imgui_widgets.cpp"
-	"RenderImgui.cpp"
-	"RenderImgui.h"
-	"RenderGLFW.cpp" 
-	"RenderGLFW.h" 
-	"utils.cpp" 
-	"utils.h"
+	"SmartFinGUI/RenderImgui.cpp"
+	"SmartFinGUI/RenderImgui.h"
+	"SmartFinGUI/RenderGLFW.cpp" 
+	"SmartFinGUI/RenderGLFW.h" 
+	"SmartFinGUI/utils.cpp" 
+	"SmartFinGUI/utils.h"
 )
 
 add_executable (SmartUI ${SOURCES} )
