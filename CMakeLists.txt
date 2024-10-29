@@ -20,7 +20,7 @@ set(SOURCES
 	"SmartFinGUI/RenderImgui.h"
 	"SmartFinGUI/RenderGLFW.cpp" 
 	"SmartFinGUI/RenderGLFW.h" 
-	"SmartFinGUI/utils.cpp" 
+	"SmartFinGUI/utils.cpp"
 	"SmartFinGUI/utils.h"
 )
 
